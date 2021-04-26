@@ -1,0 +1,283 @@
+@font-face {
+  font-family: Alata-Regular;
+  src: url("../fonts/Alata-Regular.ttf");
+}
+
+@font-face {
+  font-family: JosefinSans-Light;
+  src: url("../fonts/JosefinSans-Light.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, html {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Alata-Regular;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: black;
+  font-family: JosefinSans-Light;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+.main-wrapper div.top-section {
+  height: 70vh;
+  width: 100%;
+  background: url("../images/desktop/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6vh 0;
+  color: white;
+  position: relative;
+}
+
+.main-wrapper div.top-section nav {
+  padding: 0;
+}
+
+.main-wrapper div.top-section nav div.collapse {
+  float: right;
+}
+
+.main-wrapper div.top-section nav div.collapse ul li {
+  margin: 0 7px;
+}
+
+.main-wrapper div.top-section nav div.collapse ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-wrapper div.top-section nav div.collapse ul li.active .nav-link {
+  color: white;
+}
+
+.main-wrapper div.top-section .header-txt {
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  line-height: 48px;
+  padding: 20px 20px;
+  font-size: 55px;
+  font-family: JosefinSans-Light;
+  margin: 10% 0;
+}
+
+.main-wrapper .float-right {
+  float: right;
+}
+
+.main-wrapper section.center-section .center-content {
+  margin: 20vh 0 25vh;
+}
+
+.main-wrapper section.center-section img {
+  float: left;
+  max-width: 100%;
+}
+
+.main-wrapper section.center-section .text-content {
+  float: left;
+  color: black;
+  font-family: JosefinSans-Light;
+  padding: 13vh 0px 0 15vh;
+  font-size: 15px;
+  position: absolute;
+  left: -45%;
+  bottom: 0;
+  background: white;
+  z-index: 2;
+}
+
+.main-wrapper section.center-section .text-content p {
+  font-size: 14px;
+  font-family: Alata-Regular;
+  color: #8c8c8c;
+  margin-bottom: 0;
+}
+
+.main-wrapper section.center-section .text-content h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: black;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.main-wrapper section.creation-section .card-deck {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-wrapper section.creation-section .card-deck .card {
+  cursor: pointer;
+}
+
+.main-wrapper section.creation-section .card-deck .card .card-title {
+  position: relative;
+  top: 80%;
+  left: 10%;
+  width: 150px;
+}
+
+.main-wrapper section.creation-section .card-deck .card .card-title h2 {
+  font-family: JosefinSans-Light;
+  font-size: 28px;
+}
+
+.main-wrapper section.creation-section .card-deck .card:hover .card-img {
+  opacity: 0.4;
+}
+
+.main-wrapper section.creation-section .card-deck .card:hover h2 {
+  color: black;
+}
+
+.main-wrapper footer {
+  background: black;
+  width: 100%;
+  padding: 3% 0;
+  min-height: 20vh;
+}
+
+.main-wrapper footer ul {
+  margin: 20px 0;
+  list-style-type: none;
+  padding: 0;
+  display: block;
+}
+
+.main-wrapper footer ul li {
+  display: inline-block;
+}
+
+.main-wrapper footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-wrapper footer ul li a:first-of-type {
+  padding-left: 0 !important;
+}
+
+.main-wrapper footer ul li:first-of-type {
+  padding: 0;
+  margin: 0;
+}
+
+.main-wrapper footer .platforms {
+  text-align: right;
+}
+
+.main-wrapper footer .platforms .social-platforms img {
+  margin: 0px 10px;
+}
+
+.main-wrapper footer .platforms .clearfix {
+  clear: both;
+}
+
+.main-wrapper footer .platforms .copyrights {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.main-wrapper .btn {
+  padding: 7px 40px;
+  font-size: 15px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 0;
+  float: right;
+  letter-spacing: 0.2em;
+  word-spacing: 0.5em;
+  font-family: Alata-Regular;
+  cursor: pointer;
+}
+
+.main-wrapper .btn:hover, .main-wrapper .btn:active {
+  color: white;
+  background: black;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+    letter-spacing: 0.05em;
+  }
+  .main-wrapper div.top-section .header-txt {
+    margin: 25% auto;
+    width: 90%;
+    font-size: 40px;
+  }
+  .main-wrapper section.center-section .center-content {
+    margin: 5vh 0;
+  }
+  .main-wrapper section.center-section img {
+    float: none;
+    max-width: 100%;
+  }
+  .main-wrapper section.center-section .text-content {
+    position: unset;
+    left: unset;
+    bottom: unset;
+    padding: 3vh 5vw;
+    text-align: center;
+  }
+  .main-wrapper section.center-section .text-content h1 {
+    font-size: 30px;
+  }
+  .main-wrapper section.creation-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .main-wrapper section.creation-section .card-deck {
+    margin: 0px auto;
+  }
+  .main-wrapper section.creation-section .card-deck .card-title {
+    position: relative;
+    top: 45%;
+    left: 0%;
+    width: 130px;
+    text-align: left;
+  }
+  .main-wrapper section.creation-section .card-deck .card-title h2 {
+    font-family: JosefinSans-Light;
+    font-size: 24px;
+  }
+  .main-wrapper section.creation-section .all-btn {
+    text-align: center;
+  }
+  .main-wrapper footer {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .main-wrapper footer .platforms {
+    text-align: center;
+  }
+  .main-wrapper footer ul li {
+    display: block;
+  }
+  .main-wrapper .btn {
+    float: none;
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
